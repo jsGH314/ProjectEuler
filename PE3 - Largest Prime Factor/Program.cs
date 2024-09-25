@@ -1,5 +1,5 @@
 ﻿//What is the largest prime factor of the number 600851475143?
-
+//A prime factor of a number cannot be more than the square root of it.
 public class PE3
 {
     static void Main(string[] args)
