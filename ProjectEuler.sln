@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PE1 - Multiples of 3 or 5", "PE1 - Multiples of 3 or 5\PE1 - Multiples of 3 or 5.csproj", "{9E8D7803-0531-4E70-A284-DF702A6A3FE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PE1 - Multiples of 3 or 5", "PE1 - Multiples of 3 or 5\PE1 - Multiples of 3 or 5.csproj", "{9E8D7803-0531-4E70-A284-DF702A6A3FE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PE2 - Even Fibonacci Numbers", "PE2 - Even Fibonacci Numbers\PE2 - Even Fibonacci Numbers.csproj", "{22A60273-2A99-43DD-962D-C04D1A1B3148}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PE2 - Even Fibonacci Numbers", "PE2 - Even Fibonacci Numbers\PE2 - Even Fibonacci Numbers.csproj", "{22A60273-2A99-43DD-962D-C04D1A1B3148}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PE3 - Largest Prime Factor", "PE3 - Largest Prime Factor\PE3 - Largest Prime Factor.csproj", "{B4C9351B-E647-436A-A4BC-9A99D2018A9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{22A60273-2A99-43DD-962D-C04D1A1B3148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22A60273-2A99-43DD-962D-C04D1A1B3148}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22A60273-2A99-43DD-962D-C04D1A1B3148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4C9351B-E647-436A-A4BC-9A99D2018A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C9351B-E647-436A-A4BC-9A99D2018A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C9351B-E647-436A-A4BC-9A99D2018A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C9351B-E647-436A-A4BC-9A99D2018A9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

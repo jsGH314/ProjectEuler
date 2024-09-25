@@ -11,17 +11,42 @@ public class PE2
 
     public int FindSumOfEvenFibonacciNumbers(int number)
     {
-        int sum = 0;
-        int counter = 0;
-        while (Fibonacci(counter) < number)
+        int evenSum = 0;
+        int fibonacciIndex = 0;
+        int fibonacciNumber = 0;
+
+        while ((fibonacciNumber = Fibonacci(fibonacciIndex)) < number)
         {
-            if (Fibonacci(counter) % 2 == 0)
+            if (fibonacciNumber % 2 == 0)
             {
-                sum += Fibonacci(counter);
+                evenSum += fibonacciNumber;
             }
-            counter++;
+            fibonacciIndex++;
         }
-        return sum;
+
+        return evenSum;
     }
-    public int Fibonacci(int number) => number == 0 ? 0 : number == 1 ? 1 : Fibonacci(number - 1) + Fibonacci(number - 2);
+
+    public int Fibonacci(int number)
+    {
+        if (number == 0)
+        {
+            return 0;
+        }
+        else if (number == 1)
+        {
+            return 1;
+        }
+
+        int[] fibonacciNumbers = new int[number + 1];
+        fibonacciNumbers[0] = 0;
+        fibonacciNumbers[1] = 1;
+
+        for (int i = 2; i <= number; i++)
+        {
+            fibonacciNumbers[i] = fibonacciNumbers[i - 1] + fibonacciNumbers[i - 2];
+        }
+
+        return fibonacciNumbers[number];
+    }
 }
