@@ -4,12 +4,18 @@
 
 public class PE1
 {
-    public static void Main()
+    static void Main(string[] args)
     {
-        PE1 pe = new PE1();
-        Console.WriteLine(pe.FindSumOfMultiples(1000));
+        //using linq
+        var total = Enumerable.Range(0, 1000)
+                        .Where(counter => (counter % 3 == 0) || (counter % 5 == 0))
+                        .Sum();
+
+        Console.WriteLine(total);
+        Console.ReadKey();
     }
 
+    //first iteration
     public int FindSumOfMultiples(int number)
     {
         int sum = 0;
