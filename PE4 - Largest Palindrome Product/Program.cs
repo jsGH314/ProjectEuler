@@ -13,16 +13,28 @@
         int num1 = 0;
         int num2 = 0;
 
-        for (int i = 101; i < 1000; i++)
+        // Start from the largest possible value and decrement
+        // 999 to 101 so we can find three digit numbers
+        for (int i = 999; i >= 101; i--)
         {
-            for (int j = 101; j < 1000; j++)
+            for (int j = 999; j >= i; j--)
             {
                 int product = i * j;
-                if (IsPalindrome(product) && product > largestProduct)
+
+                // Check for palindrome without converting to string
+                if (IsPalindrome(product))
                 {
-                    largestProduct = product;
-                    num1 = i;
-                    num2 = j;
+                    if (product > largestProduct)
+                    {
+                        largestProduct = product;
+                        num1 = i;
+                        num2 = j;
+                    }
+                    // Break out of the loop if product is smaller than largestProduct
+                    else
+                    {
+                        break;
+                    }
                 }
             }
         }
@@ -32,15 +44,16 @@
 
     public bool IsPalindrome(int number)
     {
-        string numberString = number.ToString();
-        int length = numberString.Length;
-        for (int i = 0; i < length / 2; i++)
+        int reverse = 0;
+        int original = number;
+
+        while (number > 0)
         {
-            if (numberString[i] != numberString[length - i - 1])
-            {
-                return false;
-            }
+            int remainder = number % 10;
+            reverse = (reverse * 10) + remainder;
+            number /= 10;
         }
-        return true;
+
+        return original == reverse;
     }
 }
