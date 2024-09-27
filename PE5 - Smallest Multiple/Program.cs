@@ -1,6 +1,6 @@
 ﻿public class PE5
 {
-    // O(n) solution
+    // O(n) solution - second iteration
     static void Main(string[] args)
     {
         PE5 pe5 = new PE5();
@@ -9,14 +9,15 @@
 
     public int SmallestMultiple()
     {
-        foreach (var number in Enumerable.Range(1, int.MaxValue))
+        int number = 20; // Start from the smallest multiple of 20
+        while (true)
         {
             if (IsDivisibleByAll(number))
             {
                 return number;
             }
-        };
-        return 0;
+            number += 20; // Increment by 20 since the number must be divisible by 20
+        }
     }
 
     public bool IsDivisibleByAll(int number)
