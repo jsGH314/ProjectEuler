@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PE6 - Sum Square Difference
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PE7 -  10001st Prime", "PE7 -  10001st Prime\PE7 -  10001st Prime.csproj", "{7F2DF295-CA09-4929-836F-0B46A522E370}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PE8 -  Largest Product in a Series", "PE8 -  Largest Product in a Series\PE8 -  Largest Product in a Series.csproj", "{23F64E19-8239-48F5-81F5-5D21588296B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{7F2DF295-CA09-4929-836F-0B46A522E370}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F2DF295-CA09-4929-836F-0B46A522E370}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F2DF295-CA09-4929-836F-0B46A522E370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23F64E19-8239-48F5-81F5-5D21588296B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23F64E19-8239-48F5-81F5-5D21588296B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23F64E19-8239-48F5-81F5-5D21588296B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23F64E19-8239-48F5-81F5-5D21588296B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
